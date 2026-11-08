@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.DS_Store
+deploy/state/
+deploy/bin/
+*.pem
+id_ed25519
+id_ed25519.pub

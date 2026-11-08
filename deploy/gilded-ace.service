@@ -1,0 +1,15 @@
+[Unit]
+Description=The Gilded Ace Streamlit dashboard
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/gilded-ace
+ExecStart=/opt/gilded-ace/.venv/bin/streamlit run app.py --server.address=0.0.0.0 --server.port=8501
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

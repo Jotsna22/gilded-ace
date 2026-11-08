@@ -1,0 +1,15 @@
+.venv
+.git
+__pycache__
+*.pyc
+.DS_Store
+.streamlit/secrets.toml
+data/3_guests
+data/4_context
+data/5_optional
+data/**/*.csv.gz
+reference
+example-dashboard.html
+deploy/state
+*.png
+agent-transcripts
